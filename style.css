@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: medium;
+    font-family:sans-serif
+}
+
+body{
+    background-color: #2d323a;
+}
+
+.wrapper{
+    height: 100vh;
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.container{
+    
+    
+    border-radius: 10px;
+    max-width: 90%;
+    min-width: 30%;
+
+}
+
+.add_todo{
+    
+    padding: 0.5rem;
+    background-color: #ef8354;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.add_todo input{
+    border: none;
+    border-radius: 0.5rem;
+    color: #000000;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.add_todo button {
+    border: none;
+    border-radius: 0.5rem;
+    color: #000000;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #0f8b8d;
+}
+
+.add_todo h1{
+    color: #2d323a;
+    font-size: 1.5rem;
+}
+
+.todo_list{
+    padding: 0.5rem;
+    background-color: #bfc0c0;
+    border-radius: 0 0 10px 10px;
+    
+}
+
+.todo_list li{
+    list-style-type: none;
+    margin: 0.5rem 1rem;
+    background-color: #e6e9e9;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.todo_list li span{
+    overflow: hidden;
+    
+    cursor: pointer;
+}
+
+
+
+.todo_list li span input[type=checkbox]:checked {
+    text-decoration: line-through;
+  }
