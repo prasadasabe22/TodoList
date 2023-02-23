@@ -56,6 +56,7 @@ function showList() {
 function deleteTask(index) {
   let getLocalStorage = localStorage.getItem("to do");
   listArray1 = JSON.parse(getLocalStorage);
+  confirm("Are you sure, you want to delete this task?");
   //listArray1.reverse();
   listArray1.splice(index, 1);
   localStorage.setItem("to do", JSON.stringify(listArray1));
